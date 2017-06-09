@@ -34,7 +34,7 @@
                 </tr>
             </thead>
             <tbody>
-               <tr *ngFor = 'let emp of employeeList | genderFilter : Gender | empNameFilter : employeeName | genderNameFilter : searchText | orderBy : employeeName'>
+               <tr *ngFor = 'let emp of employeeList | genderFilter : Gender | empNameFilter : employeeName | genderNameFilter : searchText '>
                     <td>{{emp.employeeName}}</td>
                     <td >{{emp.DOB | date : 'yyyy-MM-dd HH:mm:ss Z'}}</td>
                     <td *ngIf = "!genderCode">{{emp.Gender}}</td>
